@@ -139,7 +139,7 @@ include_directories(
 # add_dependencies(ros_gate ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
- add_executable(ros_gate_node src/server.cpp src/ros_gate.cpp src/node.cpp)
+ add_executable(ros_gate_node src/server.cpp src/ros_gate.cpp src/node.cpp src/dtype.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above

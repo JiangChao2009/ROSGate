@@ -28,6 +28,7 @@ Socket::Socket(Socket&& o){
 	o.sock = -1; //invalidate
 }
 Socket::~Socket(){
+	printf("CLOSING SOCKET %d\n", sock);
 	close(sock);
 }
 

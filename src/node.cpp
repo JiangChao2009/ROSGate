@@ -5,6 +5,6 @@
 int main(int argc, char* argv[]){
 	ros::init(argc,argv,"ros_gate");
 	ROSGate gate(8000);
-	//gate.add_subscriber<std_msgs::Int16>("topic");
+	//gate.add_subscriber(get_dtype<std_msgs::Int16>(),"/t");
 	gate.run();
 }
